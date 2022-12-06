@@ -59,6 +59,8 @@
         },
         mounted(){
             console.log("mounted:组件渲染完成");
+            //可以把网络请求放在这里，因为此刻已渲染完毕
+            //用的最多
         },
         beforeUpdate(){
             console.log("beforeUpdate:组件更新之前");
@@ -68,6 +70,8 @@
         },
         beforeUnmount(){
             console.log("beforeUnmount:组件卸载之前");
+            //卸载之前把消耗性能的处理都干掉
+            //比如一些计时器，计数器
         },
         unmounted(){
             console.log("unmounted:组件卸载之后");
