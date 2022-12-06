@@ -11,6 +11,7 @@
   <!-- <my-component /> -->
 
   <MySwiperSlideVue/>
+  <MyAxios/>
 </template>
 
 <script>
@@ -18,6 +19,8 @@ import HelloWorld from './components/HelloWorld.vue'
 //第一步，引入自定义的组件
 import MyComponent from './components/MyComponent.vue'
 import MySwiperSlideVue from './components/MySwiperSlide.vue'
+import MyAxios from './components/MyAxios.vue'
+
 
 export default {
   name: 'App',
@@ -34,7 +37,8 @@ export default {
   components: {
     HelloWorld,
     MyComponent,
-    MySwiperSlideVue
+    MySwiperSlideVue,
+    MyAxios
   },
 
   data(){
