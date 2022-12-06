@@ -9,13 +9,15 @@
   <h2>子组件向父组件传递的数据: {{ message }}</h2>
   <!-- 或者用-连接 -->
   <!-- <my-component /> -->
+
+  <MySwiperSlideVue/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 //第一步，引入自定义的组件
 import MyComponent from './components/MyComponent.vue'
-
+import MySwiperSlideVue from './components/MySwiperSlide.vue'
 
 export default {
   name: 'App',
@@ -31,7 +33,8 @@ export default {
   //第二步，挂载导入的组件
   components: {
     HelloWorld,
-    MyComponent
+    MyComponent,
+    MySwiperSlideVue
   },
 
   data(){
