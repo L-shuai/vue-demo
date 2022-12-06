@@ -15,16 +15,17 @@ import axios from 'axios'
             }
         },
         mounted(){
-            axios({
-                method:"get",
-                url:"https://www.neu.edu.cn"
-            }).then(res =>{
-                console.log("请求完成");
-                console.log(res.data);
-            })
+            // axios({
+            //     method:"get",
+            //     // url:"https://www.neu.edu.cn"
+            //     url:"/2019/0125/c14a1/page.htm"
+            // }).then(res =>{
+            //     console.log("请求完成");
+            //     console.log(res.data);
+            // })
 
             // 或者更便捷的写法
-            axios.get("https://www.neu.edu.cn")
+            axios.get("/2019/0125/c14a1/page.htm") //配置了跨域，否则权限不够
             .then(res => {
                 console.log(res.data);
             })
